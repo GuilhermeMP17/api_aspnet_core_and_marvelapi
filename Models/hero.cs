@@ -1,0 +1,10 @@
+namespace apidotnetcore.Models
+{
+    public class hero
+    {
+        public string Nome { get; set; }
+        public string Descricao { get; set; }
+        public string UrlImagem { get; set; }
+        public string UrlWiki { get; set; }
+    }
+}
