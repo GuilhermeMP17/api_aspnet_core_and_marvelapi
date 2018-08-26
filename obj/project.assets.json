@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\apidotnetcore\\apidotnetcore.csproj",
+      "projectUniqueName": "C:\\api_aspnet_core_and_marvelapi\\apidotnetcore.csproj",
       "projectName": "apidotnetcore",
-      "projectPath": "c:\\apidotnetcore\\apidotnetcore.csproj",
+      "projectPath": "C:\\api_aspnet_core_and_marvelapi\\apidotnetcore.csproj",
       "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "c:\\apidotnetcore\\obj\\",
+      "outputPath": "C:\\api_aspnet_core_and_marvelapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

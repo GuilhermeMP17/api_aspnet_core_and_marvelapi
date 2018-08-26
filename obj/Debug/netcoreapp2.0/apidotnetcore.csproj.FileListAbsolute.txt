@@ -8,3 +8,13 @@ C:\apidotnetcore\obj\Debug\netcoreapp2.0\apidotnetcore.AssemblyInfoInputs.cache
 C:\apidotnetcore\obj\Debug\netcoreapp2.0\apidotnetcore.AssemblyInfo.cs
 C:\apidotnetcore\obj\Debug\netcoreapp2.0\apidotnetcore.dll
 C:\apidotnetcore\obj\Debug\netcoreapp2.0\apidotnetcore.pdb
+C:\api_aspnet_core_and_marvelapi\bin\Debug\netcoreapp2.0\apidotnetcore.deps.json
+C:\api_aspnet_core_and_marvelapi\bin\Debug\netcoreapp2.0\apidotnetcore.runtimeconfig.json
+C:\api_aspnet_core_and_marvelapi\bin\Debug\netcoreapp2.0\apidotnetcore.runtimeconfig.dev.json
+C:\api_aspnet_core_and_marvelapi\bin\Debug\netcoreapp2.0\apidotnetcore.dll
+C:\api_aspnet_core_and_marvelapi\bin\Debug\netcoreapp2.0\apidotnetcore.pdb
+C:\api_aspnet_core_and_marvelapi\obj\Debug\netcoreapp2.0\apidotnetcore.csproj.CoreCompileInputs.cache
+C:\api_aspnet_core_and_marvelapi\obj\Debug\netcoreapp2.0\apidotnetcore.AssemblyInfoInputs.cache
+C:\api_aspnet_core_and_marvelapi\obj\Debug\netcoreapp2.0\apidotnetcore.AssemblyInfo.cs
+C:\api_aspnet_core_and_marvelapi\obj\Debug\netcoreapp2.0\apidotnetcore.dll
+C:\api_aspnet_core_and_marvelapi\obj\Debug\netcoreapp2.0\apidotnetcore.pdb

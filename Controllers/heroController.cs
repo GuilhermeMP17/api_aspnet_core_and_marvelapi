@@ -31,6 +31,48 @@ namespace apidotnetcore.Controllers
                 HttpResponseMessage response = client.GetAsync(
                     config.GetSection("MarvelComicsAPI:BaseURL").Value +
                     $"characters?ts={ts}&apikey={publicKey}&hash={hash}&" +
+                    $"name={Uri.EscapeUriString("Spider-Man")}").Result;
+                
+                try
+                {
+                response.EnsureSuccessStatusCode();
+                string conteudo =
+                    response.Content.ReadAsStringAsync().Result;
+
+                dynamic resultado = JsonConvert.DeserializeObject(conteudo);
+
+                personagem = new hero();
+                personagem.Nome = resultado.data.results[0].name;
+                personagem.Descricao = resultado.data.results[0].description;
+                personagem.UrlImagem = resultado.data.results[0].thumbnail.path + "." +
+                resultado.data.results[0].thumbnail.extension;
+                personagem.UrlWiki = resultado.data.results[0].urls[1].url;
+                return Ok(personagem);
+                }catch{
+                    return Ok("erro");
+                }
+            }
+
+            //return Ok(personagem);
+        }
+        [Route ("Captain")]
+        public IActionResult Captain([FromServices]IConfiguration config)
+        {
+            hero personagem;
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+
+                string ts = DateTime.Now.Ticks.ToString();
+                string publicKey = config.GetSection("MarvelComicsAPI:PublicKey").Value;
+                string hash = GerarHash(ts, publicKey,
+                    config.GetSection("MarvelComicsAPI:PrivateKey").Value);
+                
+                HttpResponseMessage response = client.GetAsync(
+                    config.GetSection("MarvelComicsAPI:BaseURL").Value +
+                    $"characters?ts={ts}&apikey={publicKey}&hash={hash}&" +
                     $"name={Uri.EscapeUriString("Captain America")}").Result;
                 
                 try
@@ -55,6 +97,7 @@ namespace apidotnetcore.Controllers
 
             //return Ok(personagem);
         }
+
 
         private string GerarHash(
             string ts, string publicKey, string privateKey)
